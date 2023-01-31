@@ -51,7 +51,7 @@ flowchart
 4. Make sure that the *flatten_hierarchy* is set to **rebuilt**, which allows the design hierarchy to be preserved for synthesis, and then rebuilt which is more useful for design analysis because many logical references will be maintained.
 
 
-![Fig1](images/lab3/Fig1.png)
+    ![Fig1](images/lab3/Fig1.png)
 
 5. Click **OK**.
 
@@ -71,7 +71,8 @@ flowchart
     pane.
 
 4. Leave all the settings unchanged, and click **OK** to generate a default timing report, *timing_1*.
-![Fig1](images/lab3/Fig2.png)
+ 
+    ![Fig1](images/lab3/Fig2.png)
 
 5. Click on the link beside the **Worst Negative Slack** (WNS) and see the 8 failing paths.
 
@@ -82,17 +83,17 @@ flowchart
     The schematic for the output data path will be displayed.
 
 
-![Fig1](images/lab3/Fig3.png)
+    ![Fig1](images/lab3/Fig3.png)
 
-<p align = "center">
-<i>The output data path(Boolean)</i>
-</p>
+    <p align = "center">
+    <i>The output data path(Boolean)</i>
+    </p>
 
-![image-20220406155214280](images/lab3/Fig3_z2.png)
+    ![image-20220406155214280](images/lab3/Fig3_z2.png)
 
-<p align = "center">
-<i>The output data path(PYNQ-Z2)</i>
-</p>
+    <p align = "center">
+    <i>The output data path(PYNQ-Z2)</i>
+    </p>
 
 8. In order to see how the Source Clock Path is made up in schematic form, double-click on left end  of the C pin of the FDRE in the schematic.
     This will show the net between the BUFG and C port of the FDRE.
@@ -144,9 +145,10 @@ Since the virtual clock is slower (12 ns) than the clk_pin period (10 ns for Boo
 
    ![Fig1](images/lab3/Fig8.png)
 
-<p align = "center">
-<i>Timing Constraints showing 12 ns Virtual Clock period defined (Boolean)</i>
-</p>
+    <p align = "center">
+    <i>Timing Constraints showing 12 ns Virtual Clock period defined (Boolean)</i>
+    </p>
+
 2. Click in the Period cell of the virtual_clock and change the period from 12 to 10(Boolean) or to 8(PYNQ-z2)
 
 3. Click **Apply**.
@@ -157,11 +159,11 @@ Since the virtual clock is slower (12 ns) than the clk_pin period (10 ns for Boo
 4. Click on Rerun.
     Notice that setup timing violations are gone. However, there are still 2 failing paths for the Hold.
 
-![Fig1](images/lab3/Fig9.png)
+    ![Fig1](images/lab3/Fig9.png)
 
- <p align = "center">
-<i> Setup timing met</i>
-</p>
+    <p align = "center">
+    <i> Setup timing met</i>
+    </p>
 
 5. Click on the *WHS* link to see the paths.
 
@@ -196,11 +198,11 @@ When the implementation is completed, a dialog box will appear with three option
 
 3. Select Slice LUTs to view how much and which module consumes the resource.
 
-![Fig1](images/lab3/Fig10.png)
+    ![Fig1](images/lab3/Fig10.png)
 
-<p align = "center">
-<i>Resource utilization for the Boolean</i>
-</p>
+    <p align = "center">
+    <i>Resource utilization for the Boolean</i>
+    </p>
 
 
 #### Generate a timing summary report.
@@ -209,11 +211,11 @@ When the implementation is completed, a dialog box will appear with three option
 The Report Timing Summary dialog box opens.
 2. Leave all the settings unchanged and click **OK** to generate the report.
 
-![Fig1](images/lab3/Fig11.png)
+    ![Fig1](images/lab3/Fig11.png)
 
-<p align = "center">
-<i>The timing summary report showing timing violations</i>
-</p>
+    <p align = "center">
+    <i>The timing summary report showing timing violations</i>
+    </p>
 
 3. Click on the *WNS* link to see a detailed report to determine the failing path entries.
 
@@ -221,13 +223,13 @@ The Report Timing Summary dialog box opens.
 
   ![Fig1](images/lab3/Fig12.png)
 
-<p align = "center">
-<i>First failing path delays for the Boolean</i>
-</p>
+    <p align = "center">
+    <i>First failing path delays for the Boolean</i>
+    </p>
 
 
-Compared to delays from the synthesis report, the net delays are actual delays (rather than an estimated figure). The data path delay is longer than the destination clock path delay giving a negative slack (violation). The data path delay is 11.534 ns for the Boolean, the destination clock path is 9.975 ns and the negative slack is -1.559 ns (in this case).
-At this point we can ignore this violation as the LED display change by a few nanoseconds won’t be observable by human eyes. We can also change the output delay by approximately -2 ns and make the timings meet.
+    Compared to delays from the synthesis report, the net delays are actual delays (rather than an estimated figure). The data path delay is longer than the destination clock path delay giving a negative slack (violation). The data path delay is 11.534 ns for the Boolean, the destination clock path is 9.975 ns and the negative slack is -1.559 ns (in this case).
+    At this point we can ignore this violation as the LED display change by a few nanoseconds won’t be observable by human eyes. We can also change the output delay by approximately -2 ns and make the timings meet.
 
 
 5. Select **Implemented Design** > **Edit Timing Constraints** the *Flow Navigator* pane.
@@ -267,11 +269,11 @@ At this point we can ignore this violation as the LED display change by a few na
 
 1. In the *Flow Navigator*, under Program and Debug, click **Generate Bitstream.**
 
-![Fig1](images/lab3/Fig14.png)
+    ![Fig1](images/lab3/Fig14.png)
 
-<p align = "center">
-<i>Generating the bitstream</i>
-</p>
+    <p align = "center">
+    <i>Generating the bitstream</i>
+    </p>
 
 
 2. Click **Save** to save the constraints since the timing constraints had been changed, click **OK**, and then **Yes** to reset the runs and re-run all the processes.
@@ -294,9 +296,9 @@ The write_bitstream command will be executed (you can verify it by looking in th
 
   ![Fig1](images/lab3/Fig15.png)
 
-<p align = "center">
-<i>Opening new hardware target</i>
-</p>
+    <p align = "center">
+    <i>Opening new hardware target</i>
+    </p>
 
 
 4. The *Hardware Manager Session* status changes from **Unconnected** to the server name and the device is highlighted. Also notice that the *Status* indicates that it is not programmed.
@@ -313,9 +315,9 @@ The write_bitstream command will be executed (you can verify it by looking in th
 
   ![Fig1](images/lab3/Fig15.png)
 
-<p align = "center">
-<i>Opening new hardware target</i>
-</p>
+    <p align = "center">
+    <i>Opening new hardware target</i>
+    </p>
 
 
 4. The *Hardware Manager Session* status changes from **Unconnected** to the server name and the device is highlighted. The status may indicate that the device is programmed, **ignore the status**.

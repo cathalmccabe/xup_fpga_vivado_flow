@@ -188,33 +188,33 @@ Hover the mouse over **H16**(PYNQ-Z2) or **F14**(Boolean) in the Device view win
 
 3. Type the following commands in the console to assign the pin locations.
 
-**For PYNQ-Z2:**
+   **For PYNQ-Z2:**
 
-```tcl
-# four on-board LEDs
-set_property -dict { PACKAGE_PIN R14 IOSTANDARD LVCMOS33 } [get_ports { led_pins[0] }];
-set_property -dict { PACKAGE_PIN P14 IOSTANDARD LVCMOS33 } [get_ports { led_pins[1] }];
-set_property -dict { PACKAGE_PIN N16 IOSTANDARD LVCMOS33 } [get_ports { led_pins[2] }];
-set_property -dict { PACKAGE_PIN M14 IOSTANDARD LVCMOS33 } [get_ports { led_pins[3] }];
-# four LEDs on the RPi extension board
-set_property -dict { PACKAGE_PIN B20 IOSTANDARD LVCMOS33 } [get_ports { led_pins[4] }];
-set_property -dict { PACKAGE_PIN W8 IOSTANDARD LVCMOS33 } [get_ports { led_pins[5] }];
-set_property -dict { PACKAGE_PIN U8 IOSTANDARD LVCMOS33 } [get_ports { led_pins[6] }];
-set_property -dict { PACKAGE_PIN W6 IOSTANDARD LVCMOS33 } [get_ports { led_pins[7] }];
-```
+   ```tcl
+   # four on-board LEDs
+   set_property -dict { PACKAGE_PIN R14 IOSTANDARD LVCMOS33 } [get_ports { led_pins[0] }];
+   set_property -dict { PACKAGE_PIN P14 IOSTANDARD LVCMOS33 } [get_ports { led_pins[1] }];
+   set_property -dict { PACKAGE_PIN N16 IOSTANDARD LVCMOS33 } [get_ports { led_pins[2] }];
+   set_property -dict { PACKAGE_PIN M14 IOSTANDARD LVCMOS33 } [get_ports { led_pins[3] }];
+   # four LEDs on the RPi extension board
+   set_property -dict { PACKAGE_PIN B20 IOSTANDARD LVCMOS33 } [get_ports { led_pins[4] }];
+   set_property -dict { PACKAGE_PIN W8 IOSTANDARD LVCMOS33 } [get_ports { led_pins[5] }];
+   set_property -dict { PACKAGE_PIN U8 IOSTANDARD LVCMOS33 } [get_ports { led_pins[6] }];
+   set_property -dict { PACKAGE_PIN W6 IOSTANDARD LVCMOS33 } [get_ports { led_pins[7] }];
+   ```
 
-**For Boolean:**
+   **For Boolean:**
 
-```tcl
-set_property -dict {PACKAGE_PIN G1 IOSTANDARD LVCMOS33} [get_ports {led_pins[0]}]
-set_property -dict {PACKAGE_PIN G2 IOSTANDARD LVCMOS33} [get_ports {led_pins[1]}]
-set_property -dict {PACKAGE_PIN F1 IOSTANDARD LVCMOS33} [get_ports {led_pins[2]}]
-set_property -dict {PACKAGE_PIN F2 IOSTANDARD LVCMOS33} [get_ports {led_pins[3]}]
-set_property -dict {PACKAGE_PIN E1 IOSTANDARD LVCMOS33} [get_ports {led_pins[4]}]
-set_property -dict {PACKAGE_PIN E2 IOSTANDARD LVCMOS33} [get_ports {led_pins[5]}]
-set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports {led_pins[6]}]
-set_property -dict {PACKAGE_PIN E5 IOSTANDARD LVCMOS33} [get_ports {led_pins[7]}]
-```
+   ```tcl
+   set_property -dict {PACKAGE_PIN G1 IOSTANDARD LVCMOS33} [get_ports {led_pins[0]}]
+   set_property -dict {PACKAGE_PIN G2 IOSTANDARD LVCMOS33} [get_ports {led_pins[1]}]
+   set_property -dict {PACKAGE_PIN F1 IOSTANDARD LVCMOS33} [get_ports {led_pins[2]}]
+   set_property -dict {PACKAGE_PIN F2 IOSTANDARD LVCMOS33} [get_ports {led_pins[3]}]
+   set_property -dict {PACKAGE_PIN E1 IOSTANDARD LVCMOS33} [get_ports {led_pins[4]}]
+   set_property -dict {PACKAGE_PIN E2 IOSTANDARD LVCMOS33} [get_ports {led_pins[5]}]
+   set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports {led_pins[6]}]
+   set_property -dict {PACKAGE_PIN E5 IOSTANDARD LVCMOS33} [get_ports {led_pins[7]}]
+   ```
 
 
 
@@ -224,7 +224,7 @@ set_property -dict {PACKAGE_PIN E5 IOSTANDARD LVCMOS33} [get_ports {led_pins[7]}
 
 5. Enter **uart_led_{BOARDS}** in the *File name* field, and click **OK**.
 
-![images](./images/lab5/Fig10.png)
+   ![images](./images/lab5/Fig10.png)
 
    <p align = "center">
    <i>Saving constraints</i>
@@ -247,18 +247,18 @@ set_property -dict {PACKAGE_PIN E5 IOSTANDARD LVCMOS33} [get_ports {led_pins[7]}
 
 5. Click on **Migrate to RTL**.
 
-The *Migrate to RTL* form will be displayed with Top RTL file field showing **{TUTORIAL}**/io_1.v entry.
+   The *Migrate to RTL* form will be displayed with Top RTL file field showing **{TUTORIAL}**/io_1.v entry.
 
-1. Change *io_1.v* to **uart_led.v(for PYNQ-Z2)** or **uart_top.v(for Boolean)**, and click **OK**
+6. Change *io_1.v* to **uart_led.v(for PYNQ-Z2)** or **uart_top.v(for Boolean)**, and click **OK**
 
-![images](./images/lab5/Fig12.png)
+   ![images](./images/lab5/Fig12.png)
 
-<p align = "center">
-<i>Assigning top-level file name(for Boolean)</i>
-</p>
+   <p align = "center">
+   <i>Assigning top-level file name(for Boolean)</i>
+   </p>
 
 
-1. Select the **Hierarchy** tab and notice that the *uart_top.v* file has been added to the project with top-level module name as **ios**. If you double-click the entry, you will see the module name with the ports listing.
+7. Select the **Hierarchy** tab and notice that the *uart_top.v* file has been added to the project with top-level module name as **ios**. If you double-click the entry, you will see the module name with the ports listing.
 
    ![images](./images/lab5/Fig13.png)
 
@@ -275,27 +275,27 @@ The *Migrate to RTL* form will be displayed with Top RTL file field showing **{T
 5. Click **Finish**.
 6. Using Windows Explorer, browse to **{SOURCES}\\{BOARD}\lab5** and open *uart_top.txt* using any text editor. Copy the content of it and paste it in *uart_top.v* or *uart_led.v* in the Vivado project.
 
----
+   ---
 
-**For PYNQ-Z2, there are two extra steps to do**
+   **For PYNQ-Z2, there are two extra steps to do**
 
-1. In the Tcl Shell window enter the following command to change to the lab directory and hit the Enter key.
+   1. In the Tcl Shell window enter the following command to change to the lab directory and hit the Enter key.
 
-   ```shell
-   cd {TUTORIAL}/lab5
-   ```
+      ```shell
+      cd {TUTORIAL}/lab5
+      ```
 
-2. Generate the PS design by executing the provided Tcl script.
+   2. Generate the PS design by executing the provided Tcl script.
 
-   ```tcl
-   source ps_init.tcl
-   ```
+      ```tcl
+      source ps_init.tcl
+      ```
 
-   This script will create a block design called *system*, instantiate ZYNQ PS with one GPIO channel (GPIO14) and one EMIO channel. It will then create a **top-level wrapper** file called *system_wrapper.v* which will instantiate the *system.bd* (the block design). You can check the contents of the tcl files to confirm the commands that are being run.
+      This script will create a block design called *system*, instantiate ZYNQ PS with one GPIO channel (GPIO14) and one EMIO channel. It will then create a **top-level wrapper** file called *system_wrapper.v* which will instantiate the *system.bd* (the block design). You can check the contents of the tcl files to confirm the commands that are being run.
 
-   **NOTICE**: Please make sure that your top-level module is *system_wrapper* which is generated by the tcl script. If the auto-execute script fails, please manually set the system_wrapper as top. Right click on the **system_wrapper** entry, and click *set as Top*.
+      **NOTICE**: Please make sure that your top-level module is *system_wrapper* which is generated by the tcl script. If the auto-execute script fails, please manually set the system_wrapper as top. Right click on the **system_wrapper** entry, and click *set as Top*.
 
----
+   ---
 
 7. Double-click on the **uart_top**(Boolean) or **uart_led**(PYNQ-Z2) entry to view its content.
 
@@ -345,9 +345,9 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
 
    ![images](./images/lab5/Fig16.png)
 
- <p align = "center">
-<i>Specifying Input Delays for btn_pin and rst_pin(PYNQ-Z2)</i>
-</p>
+   <p align = "center">
+   <i>Specifying Input Delays for btn_pin and rst_pin(PYNQ-Z2)</i>
+   </p>
 
 
 10. Enter the *tsu* and *thd* as **0 ns** and enter the *trce_dly_max* and *trce_dly_min* as **-2.20 ns.** Click **Apply** and then click **Next**.
@@ -506,9 +506,9 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
 
   ![fig1](images/lab5/fig15-16479350107761.png)
 
-<p align = "center">
-<i>Opening new hardware target</i>
-</p>
+   <p align = "center">
+   <i>Opening new hardware target</i>
+   </p>
 
 
 4. The Hardware Session status changes from Unconnected to the server name and the device is highlighted. Also notice that the Status indicates that it is not programmed.
@@ -525,30 +525,28 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
 
   ![fig1](images/lab5/fig15-16479350107761.png)
 
-<p align = "center">
-<i>Opening new hardware target</i>
-</p>
+   <p align = "center">
+   <i>Opening new hardware target</i>
+   </p>
 
 4. The Hardware Session status changes from Unconnected to the server name and the device is highlighted. The status may indicate that the device is programmed, **ignore the status**.
 5. Select the device in the Hardware Device Properties, and verify that the **system_wrapper.bit**  is selected as the programming file in the General tab.
 
----
+6. Make sure that the Micro-USB cable is connected to the JTAG PROG connector.
 
-1. Make sure that the Micro-USB cable is connected to the JTAG PROG connector.
+7. Turn ON the power.
 
-2. Turn ON the power.
-
-3. Select the *Open Hardware Manager* option.
+8. Select the *Open Hardware Manager* option.
 
    The Hardware Manager window will open indicating “unconnected” status.
 
-4. Click on the **Open target** link, then **Auto Connect** from the dropdown menu.
+9. Click on the **Open target** link, then **Auto Connect** from the dropdown menu.
 
    You can also click on the **Open recent target** link if the board was already targeted before.
 
-5. The Hardware Manager status changes from Unconnected to the server name and the device is highlighted. Also notice that the Status indicates that it is not programmed.
+10. The Hardware Manager status changes from Unconnected to the server name and the device is highlighted. Also notice that the Status indicates that it is not programmed.
 
-6. Select the device and verify that the **ios.bit** is selected as the programming file in the General tab.
+11. Select the device and verify that the **ios.bit** is selected as the programming file in the General tab.
 
 #### Start a terminal emulator program such as TeraTerm or Mobaxterm. Select an appropriate COM port (you can find the correct COM number using the Control Panel). Set the COM port for 115200 baud rate communication. Program the FPGA and verify the functionality.
 
