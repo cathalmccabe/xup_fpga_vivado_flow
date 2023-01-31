@@ -51,7 +51,7 @@ flowchart
 4. Make sure that the *flatten_hierarchy* is set to **rebuilt**, which allows the design hierarchy to be preserved for synthesis, and then rebuilt which is more useful for design analysis because many logical references will be maintained.
 
 
-    ![Fig1](images/lab3/Fig1.png)
+    ![Fig1](images/lab3/Fig1.PNG)
 
 5. Click **OK**.
 
@@ -72,7 +72,7 @@ flowchart
 
 4. Leave all the settings unchanged, and click **OK** to generate a default timing report, *timing_1*.
  
-    ![Fig2](images/lab3/Fig2.png)
+    ![Fig2](images/lab3/Fig2.PNG)
 
 5. Click on the link beside the **Worst Negative Slack** (WNS) and see the 8 failing paths.
 
@@ -281,7 +281,6 @@ The write_bitstream command will be executed (you can verify it by looking in th
 
 ### Step 4 Verify the Functionality
 
----
 
 **For Boolean:**
 
@@ -318,7 +317,6 @@ The write_bitstream command will be executed (you can verify it by looking in th
 4. The *Hardware Manager Session* status changes from **Unconnected** to the server name and the device is highlighted. The status may indicate that the device is programmed, **ignore the status**.
 5. Select the device in the *Hardware Device Properties*, and verify that the **uart_led.bit** is selected as the programming file in the General tab.
 
----
 
 ### Start a terminal emulator program such as Mobaxterm or TeraTerm . Select an appropriate COM port (you can find the correct COM number using the Control Panel). Set the COM port for 115200 baud rate communication. Program the FPGA and verify the functionality.
 
