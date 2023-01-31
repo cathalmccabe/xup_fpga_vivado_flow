@@ -96,13 +96,13 @@ The absolute path for the source code should only contain ascii characters. Deep
 
    (If you are using PYNQ-Z2)
 
-14. Copy the tcl script `ps_init.tcl` from **{SOURCES}/pynq-z2/lab2** to **{TUTORIAL}/lab2**.In the Tcl Shell window enter the following command to change to the lab directory and hit **Enter**.
+   1. Copy the tcl script `ps_init.tcl` from **{SOURCES}/pynq-z2/lab2** to **{TUTORIAL}/lab2**.In the Tcl Shell window enter the following command to change to the lab directory and hit **Enter**.
 
    ```tcl
    cd {TUTORIAL}/lab2
    ```
 
-15. Generate the PS design by executing the provided Tcl script.
+   2. Generate the PS design by executing the provided Tcl script.
 
    ```tcl
    source ps_init.tcl
@@ -134,13 +134,13 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 4. In the *Sources* pane, expand the *Constraints* folder and double-click the *uart_led_timing_{BOARD}.xdc*  entry to open the file in text mode.
 
-![image-20220222143623444](images/lab2/Fig3.png)
+   ![image-20220222143623444](images/lab2/Fig3.png)
 
-<p align = "center">
-<i>Timing constraints</i>
-</p>
+   <p align = "center">
+   <i>Timing constraints</i>
+   </p>
 
-Line 3 creates the period constraint of 10 ns with a duty cycle of 50%. Line 6 creates a virtual clock of 12 ns. This clock can be viewed as the upstream device is generating its output with respect to its clock and outputs data with respect to it. The rxd_pin is constrained with respect to the design clock (lines 9, and 10) whereas the btn_pin is constrained with respect to the upstream clock (lines 12, 13). The led_pins are constrained with respect to the upstream clock as the downstream device may be using it.
+   Line 3 creates the period constraint of 10 ns with a duty cycle of 50%. Line 6 creates a virtual clock of 12 ns. This clock can be viewed as the upstream device is generating its output with respect to its clock and outputs data with respect to it. The rxd_pin is constrained with respect to the design clock (lines 9, and 10) whereas the btn_pin is constrained with respect to the upstream clock (lines 12, 13). The led_pins are constrained with respect to the upstream clock as the downstream device may be using it.
 
 ## Step 2 Elaborate the Design
 

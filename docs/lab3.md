@@ -38,9 +38,9 @@ flowchart
 
 ## Steps
 
-### Step 1 Open a Vivado Project using IDE
+## Step 1 Open a Vivado Project using IDE
 
-#### Launch Vivado and open the lab2 project. Save the project as lab3 in the {TUTORIAL} directory making sure that the create subdirectory option is selected. Set the flatten_hierarchy setting to rebuilt. Create new synthesis run naming it as synth_2.
+### Setup
 
 1. Start the Vivado, if necessary, and open either the *lab2* project (lab2.xpr) you created in the previous lab or the *lab2* project in the **labsolution** directory using the **Open Project** link in the *Getting Started* page.
 
@@ -72,7 +72,7 @@ flowchart
 
 4. Leave all the settings unchanged, and click **OK** to generate a default timing report, *timing_1*.
  
-    ![Fig1](images/lab3/Fig2.png)
+    ![Fig2](images/lab3/Fig2.png)
 
 5. Click on the link beside the **Worst Negative Slack** (WNS) and see the 8 failing paths.
 
@@ -83,7 +83,7 @@ flowchart
     The schematic for the output data path will be displayed.
 
 
-    ![Fig1](images/lab3/Fig3.png)
+    ![Fig3](images/lab3/Fig3.png)
 
     <p align = "center">
     <i>The output data path(Boolean)</i>
@@ -100,12 +100,13 @@ flowchart
 
 9. Similarly, double-click on the left end of the BUFG to see the path between IBUF and BUFG.
 
-![Fig1](images/lab3/Fig4.png)
+![Fig4](images/lab3/Fig4.png)
 
 
 <p align = "center">
 <i>Source to clock port of the FDRE</i>
 </p>
+
 ![Fig1](images/lab3/Fig5.png)
 
 <p align = "center">
@@ -154,7 +155,7 @@ Since the virtual clock is slower (12 ns) than the clk_pin period (10 ns for Boo
 3. Click **Apply**.
     Note that since the timing constraint has changed, a warning message in the console pane is displayed to rerun the report.
 
-  ![Fig1](images/lab3/Figa.png)
+  ![Fig1](images/lab3/figa.png)
 
 4. Click on Rerun.
     Notice that setup timing violations are gone. However, there are still 2 failing paths for the Hold.
@@ -227,11 +228,8 @@ The Report Timing Summary dialog box opens.
     <i>First failing path delays for the Boolean</i>
     </p>
 
-
     Compared to delays from the synthesis report, the net delays are actual delays (rather than an estimated figure). The data path delay is longer than the destination clock path delay giving a negative slack (violation). The data path delay is 11.534 ns for the Boolean, the destination clock path is 9.975 ns and the negative slack is -1.559 ns (in this case).
     At this point we can ignore this violation as the LED display change by a few nanoseconds won’t be observable by human eyes. We can also change the output delay by approximately -2 ns and make the timings meet.
-
-
 5. Select **Implemented Design** > **Edit Timing Constraints** the *Flow Navigator* pane.
 
 6. Select the *Set Output Delay entry* in the left pane, select all the output ports and change the Delay Value to -2.000 ns.
@@ -299,8 +297,6 @@ The write_bitstream command will be executed (you can verify it by looking in th
     <p align = "center">
     <i>Opening new hardware target</i>
     </p>
-
-
 4. The *Hardware Manager Session* status changes from **Unconnected** to the server name and the device is highlighted. Also notice that the *Status* indicates that it is not programmed.
 5. Select the device in the Hardware Device Properties, and verify that the **uart_led.bit** is selected as the programming file in the General tab.
 
@@ -313,13 +309,12 @@ The write_bitstream command will be executed (you can verify it by looking in th
 3. Select the *Open Hardware Manager* option and click **OK**.
    The Hardware Manager window will open indicating “unconnected” status.
 
-  ![Fig1](images/lab3/Fig15.png)
+   ![Fig1](images/lab3/Fig15.png)
 
-    <p align = "center">
-    <i>Opening new hardware target</i>
-    </p>
-
-
+   <p align = "center">
+   <i>Opening new hardware target</i>
+   </p>
+   
 4. The *Hardware Manager Session* status changes from **Unconnected** to the server name and the device is highlighted. The status may indicate that the device is programmed, **ignore the status**.
 5. Select the device in the *Hardware Device Properties*, and verify that the **uart_led.bit** is selected as the programming file in the General tab.
 
