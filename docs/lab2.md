@@ -48,11 +48,10 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 **{BOARD}** refers to target *Boolean* and *Z2* boards.
 
-## Steps
 
-### Step 1 Create a Vivado Project
+## Step 1 Create a Vivado Project
 
-#### Launch Vivado and create an empty project targeting the XC7S50CSGA324-1(for Boolean) or XC7Z020CLG400-1 (PYNQ-Z2) board, selecting Verilog as a target language. Use the provided Verilog source files, uart_led_pins_{board}.xdc and uart_led_timing.xdc files from the {SOURCES}\lab2 directory.
+### Launch Vivado and create an empty project targeting the XC7S50CSGA324-1(for Boolean) or XC7Z020CLG400-1 (PYNQ-Z2) board, selecting Verilog as a target language. Use the provided Verilog source files, uart_led_pins_{board}.xdc and uart_led_timing.xdc files from the {SOURCES}\lab2 directory.
 
 1. Open Vivado by selecting **Start > All Programs > Xilinx Design Tools > Vivado 2021.2**.
 
@@ -93,35 +92,36 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 13. Click **Finish** to create the Vivado project.
 
----
+   ---
 
-(If you are using PYNQ-Z2)
+   (If you are using PYNQ-Z2)
 
 14. Copy the tcl script `ps_init.tcl` from **{SOURCES}/pynq-z2/lab2** to **{TUTORIAL}/lab2**.In the Tcl Shell window enter the following command to change to the lab directory and hit **Enter**.
 
-```tcl
-cd {TUTORIAL}/lab2
-```
+   ```tcl
+   cd {TUTORIAL}/lab2
+   ```
 
 15. Generate the PS design by executing the provided Tcl script.
 
-```tcl
-source ps_init.tcl
-```
+   ```tcl
+   source ps_init.tcl
+   ```
 
-Please check if the path in the tcl script is correct or not.
+   Please check if the path in the tcl script is correct or not.
 
----
+   ---
 
 #### Analyze the design source files hierarchy (Taking Boolean as an example).
 
 1. In the Sources pane, expand the uart_led entry and notice hierarchy of the lower-level modules.
 
-![image-20220222143623444](images/lab2/Fig2.png)
+   ![image-20220222143623444](images/lab2/Fig2.png)
 
-<p align = "center">
-<i>Opening the source file (Boolean as example)</i>
-</p>
+   <p align = "center">
+   <i>Opening the source file (Boolean as example)</i>
+   </p>
+
 2. Double-click on the **uart_led** entry to view its content.
    Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined to be
    115200 and 125M Hz(PYNQ-Z2) or 100 MHz(Boolean) respectively as shown in the design diagram. Also notice that the
@@ -130,9 +130,9 @@ Please check if the path in the tcl script is correct or not.
 3. Expand uart_rx_i0 instance to see its hierarchy.
    This module uses the baud rate generator and a finite state machine. The rxd_pin is sampled at a x16 the baud rate.
 
-#### Open the uart_led_timing.xdc source and analyze the content.
+   #### Open the uart_led_timing.xdc source and analyze the content.
 
-1. In the *Sources* pane, expand the *Constraints* folder and double-click the *uart_led_timing_{BOARD}.xdc*  entry to open the file in text mode.
+4. In the *Sources* pane, expand the *Constraints* folder and double-click the *uart_led_timing_{BOARD}.xdc*  entry to open the file in text mode.
 
 ![image-20220222143623444](images/lab2/Fig3.png)
 
@@ -142,9 +142,9 @@ Please check if the path in the tcl script is correct or not.
 
 Line 3 creates the period constraint of 10 ns with a duty cycle of 50%. Line 6 creates a virtual clock of 12 ns. This clock can be viewed as the upstream device is generating its output with respect to its clock and outputs data with respect to it. The rxd_pin is constrained with respect to the design clock (lines 9, and 10) whereas the btn_pin is constrained with respect to the upstream clock (lines 12, 13). The led_pins are constrained with respect to the upstream clock as the downstream device may be using it.
 
-### Step 2 Elaborate the Design
+## Step 2 Elaborate the Design
 
-#### Elaborate and perform the RTL analysis on the source file.
+### Elaborate and perform the RTL analysis on the source file.
 
 1. Expand the Open Elaborated Design entry under the *RTL Analysis* tasks of the *Flow Navigator*
    pane and click on **Schematic**.
@@ -202,9 +202,9 @@ Line 3 creates the period constraint of 10 ns with a duty cycle of 50%. Line 6 c
 10. Click on **Report** **Noise** and click **OK** to generate the report named **ssn_1**. Observe that this time
     it does not show any errors (no red).
 
-### Step 3 Synthesize the Design
+## Step 3 Synthesize the Design
 
-#### Synthesize the design with the Vivado synthesis tool and analyze the Project Summary output.
+### Synthesize the design with the Vivado synthesis tool and analyze the Project Summary output.
 
 1. Click on **Run** **Synthesis** under the *Synthesis* tasks of the *Flow* Navigator pane.
 
@@ -253,7 +253,7 @@ Line 3 creates the period constraint of 10 ns with a duty cycle of 50%. Line 6 c
 
 9. Click on the (![image-20220222155502208](images/lab2/image-20220222155502208.png) ) in the schematic view to go back to its parent block.
 
-#### Analyze the timing report
+### Analyze the timing report
 
 1. Click on **Report Timing Summary** under the *Synthesized* *Design* tasks of the *Flow* *Navigator*
    pane.
@@ -287,7 +287,7 @@ Line 3 creates the period constraint of 10 ns with a duty cycle of 50%. Line 6 c
 
    Note that this is an estimate only. The nets are specified as unplaced and have all been allocated default values (0.800 ns). No actual routing delays are considered.
 
-#### Generate the utilization and power reports.
+### Generate the utilization and power reports.
 
 1. Click **Report Utilization** under the *Synthesized Design*, and click **OK** to generate the utilization report.
 
@@ -333,7 +333,7 @@ From the power report, find the % power consumption used by each of the followin
 
 You can move the mouse on the boxes which do not show the percentage to see the consumption.
 
-#### Write the checkpoint in order to analyze the results without going through the actual synthesis process.
+### Write the checkpoint in order to analyze the results without going through the actual synthesis process.
 
 1. Select **File > Checkpoint > Write** to save the processed design so it can be opened later for    further analysis.
 2. A dialog box will appear showing the default name of the file in the current project directory.
@@ -346,7 +346,7 @@ You can move the mouse on the boxes which do not show the percentage to see the 
 
 3. Click **OK**
 
-#### Change the synthesis settings to flatten the design. Re-synthesize the design and analyze the results.
+### Change the synthesis settings to flatten the design. Re-synthesize the design and analyze the results.
 
 1. Click on the **Settings** under the *Project Manager*, and select **Synthesis**.
 2. Click on the **flatten_hierarchy** drop-down button and select **full** to flatten the design.
@@ -390,7 +390,7 @@ You can move the mouse on the boxes which do not show the percentage to see the 
 10. Click on **Report Utilization** and observe that the hierarchical utilization is no longer available.
     Also note that the number of Slice Registers is 37.
 
-#### Write the checkpoint in order to analyze the results without going through the actual synthesis process.
+### Write the checkpoint in order to analyze the results without going through the actual synthesis process.
 
 1. Select **File > Checkpoint > Write** to save the processed design so it can be opened later for further analysis.
 
@@ -398,9 +398,9 @@ You can move the mouse on the boxes which do not show the percentage to see the 
 
 3. Click **OK**.
 
-### Step 4 Read the Checkpoints
+## Step 4 Read the Checkpoints
 
-#### Read the previously saved checkpoint (checkpoint_1) in order to analyze the results without going through the actual synthesis process.
+### Read the previously saved checkpoint (checkpoint_1) in order to analyze the results without going through the actual synthesis process.
 
 1. Launch Vivado and select **File > Checkpoint > Open ** at the *Getting Started* Screen.
 
