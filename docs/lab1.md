@@ -31,23 +31,23 @@ The absolute path for the source code should only contain ascii characters. Deep
 3. Click the Browse button of the *Project location* field of the **New Project** form, browse to **{TUTORIAL}**, i.e. **C:\vivado_tutorial**, and click **Select**.
 4. Enter **lab1** in the *Project name* field.  Make sure that the *Create Project Subdirectory* box is checked.  Click **Next**.
 
-<p align="center">
-<img src ="./images/lab1/Fig3.png">
-</p>
-<p align = "center">
-<i>Project Name and Location entry</i>
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig3.png">
+   </p>
+   <p align = "center">
+   <i>Project Name and Location entry</i>
+   </p>
 
 5. Select **RTL Project** option **ONLY** in the *Project Type* form, and click **Next**.
 
 6. Using the drop-down buttons, select **Verilog** as the *Target Language* and *Simulator Language* in the *Add Sources* form.
 
-<p align="center">
-<img src ="./images/lab1/Fig4.png">
-</p>
-<p align = "center">
-<i>Selecting Target and Simulator language</i>
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig4.png">
+   </p>
+   <p align = "center">
+   <i>Selecting Target and Simulator language</i>
+   </p>
 
 7. Click on the **Blue Plus** button, then click **Add Files…** and browse to the **{sources}\\{BOARD}\lab1** directory, select *lab1.v*, and click **OK**.
 
@@ -124,12 +124,12 @@ lab1
 
 1. In the *Sources* pane, double-click the **lab1.v** entry to open the file in text mode.
 
-<p align="center">
-<img src ="./images/lab1/Fig8.png">
-</p>
-<p align = "center">
-<i>Opening the source file</i>
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig8.png">
+   </p>
+   <p align = "center">
+   <i>Opening the source file</i>
+   </p>
 
 2. Notice in the Verilog code that the first line defines the timescale directive for the simulator. Lines 2-4 are comment lines describing the module name and the purpose of the module.
 
@@ -166,12 +166,12 @@ Expand the *Open Elaborated Design* entry under the *RTL Analysis* tasks of the 
 
 The model (design) will be elaborated and a logic view of the design is displayed.
 
-<p align="center">
-<img src ="./images/lab1/Fig10.png">
-</p>
-<p align = "center">
-<i>A Logic View of The Design</i>
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig10.png">
+   </p>
+   <p align = "center">
+   <i>A Logic View of The Design</i>
+   </p>
 
 ### Simulate the Design using the Vivado Simulator
 
@@ -310,12 +310,12 @@ lab1.sim
 
    You will see several buttons next to the waveform window which can be used for the specific purpose as listed in the table below.
 
-<p align="center">
-<img src ="./images/lab1/Fig18.png">
-</p>
-<p align = "center">
-<i>Various buttons available to view the waveform</i>
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig18.png">
+   </p>
+   <p align = "center">
+   <i>Various buttons available to view the waveform</i>
+   </p>
 
 4. Click on the *Zoom Fit* button (![](./images/lab1/Fig19.png)) to see the entire waveform.
 
@@ -333,33 +333,33 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
 
    The btn[3:0] and led[3:0] signals will be displayed in the *Objects* window.
 
-<p align="center">
-<img src ="./images/lab1/Fig22.png">
-</p>
-<p align = "center">
-<i>Selecting Lower-Level Signals</i>
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig22.png">
+   </p>
+   <p align = "center">
+   <i>Selecting Lower-Level Signals</i>
+   </p>
 
 2. Select **btn[3:0]** and **led[3:0]** and drag them into the waveform window to monitor those lower-level signals.
 
 3. On the simulator tool buttons ribbon bar![](./images/lab1/Fig23.png), type 500 over in the simulation run time field,  click on the drop-down button of the units field and select *ns* since we want to run for 500 ns (total of 700 ns), and click on the (  ![](./images/lab1/Fig25.png) ) button. The simulation will run for an additional 500 ns.     
 4. Click on the *Zoom Fit* button and observe the output.
 
-<p align="center">
-<img src ="./images/lab1/Fig26.png">
-</p>
-<p align = "center">
-<i>Running simulation for additional 500 ns</i>
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig26.png">
+   </p>
+   <p align = "center">
+   <i>Running simulation for additional 500 ns</i>
+   </p>
 
-Observe the Tcl Console window and see the output is being displayed as the testbench uses the $display task.
+   Observe the Tcl Console window and see the output is being displayed as the testbench uses the $display task.
 
-<p align="center">
-<img src ="./images/lab1/Fig28.png">
-</p>
-<p align = "center">
-<i>Tcl Console output after running the simulation for additional 500 ns</i>
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig28.png">
+   </p>
+   <p align = "center">
+   <i>Tcl Console output after running the simulation for additional 500 ns</i>
+   </p>
 
 5. Close the simulator by selecting **File > Close Simulation**.
 
@@ -392,12 +392,12 @@ Observe the Tcl Console window and see the output is being displayed as the test
 
    Notice that there are an estimated 3 LUTs and 8 IOs (4 input and 4 output) that are used.
 
-<p align="center">
-<img src ="./images/lab1/Fig31.png">
-</p>
-<p align = "center">
-<i>Resource utilization estimation summary</i>
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig31.png">
+   </p>
+   <p align = "center">
+   <i>Resource utilization estimation summary</i>
+   </p>
 
 5. In The *Flow Navigator*, under *Synthesis* (expand *Open* *Synthesized Design* if necessary), click on **Schematic** to view the synthesized design in a schematic view.
 
@@ -449,12 +449,12 @@ Observe the Tcl Console window and see the output is being displayed as the test
    <p align = "center">
    <i>Viewing implemented design</i>
    </p>
-<p align="center">
-<img src ="./images/lab1/Fig36.png">
-</p>
-<p align = "center">
-<i>Selecting a net</i>
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig36.png">
+   </p>
+   <p align = "center">
+   <i>Selecting a net</i>
+   </p>
 
 
 6. Close the implemented design view by selecting **File > Close Implemented Design**, and select the **Project Summary** tab (you may have to change to the Default Layout view) and observe the results.
@@ -475,12 +475,12 @@ Observe the Tcl Console window and see the output is being displayed as the test
 
 8. In Vivado, select the **Reports** tab in the bottom panel (if not visible, click *Window* in the menu bar and select **Reports**), and double-click on the *Utilization Report* entry under the *Place Design* section. The report will be displayed in the auxiliary view pane showing resource utilization.  Note that since the design is combinatorial, no registers are used.
 
-<p align="center">
-<img src ="./images/lab1/Fig38.png">
-</p>
-<p align = "center">
-<i>Available reports to view</i>
-</p>					
+   <p align="center">
+   <img src ="./images/lab1/Fig38.png">
+   </p>
+   <p align = "center">
+   <i>Available reports to view</i>
+   </p>					
 
 ### Perform Timing Simulation
  
@@ -520,23 +520,23 @@ Observe the Tcl Console window and see the output is being displayed as the test
 
    Make sure that the board is set to use USB power.
 
-<p align="center">   
-   <img src="images/lab1/boolean_sche.png" alt="image" style="zoom:70%;" />
-</p>
+   <p align="center">   
+      <img src="images/lab1/boolean_sche.png" alt="image" style="zoom:70%;" />
+   </p>
 
-<p align = "center">
-<i>Board connection for the Boolean</i>
-</p>
+   <p align = "center">
+   <i>Board connection for the Boolean</i>
+   </p>
 
 
 
-<p align="center">
-<img src ="./images/lab1/Fig42.png">
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig42.png">
+   </p>
 
-<p align = "center">
-<i>Board Connection for the PYNQ-Z2</i>
-</p>
+   <p align = "center">
+   <i>Board Connection for the PYNQ-Z2</i>
+   </p>
 
 3. Power **ON** the board.
 
@@ -559,12 +559,12 @@ Observe the Tcl Console window and see the output is being displayed as the test
 
 6. Click on the **Open target** link.
 
-<p align="center">
-<img src ="./images/lab1/Fig44.png">
-</p>
-<p align = "center">
-<i>Opening new Hardware Target</i>
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig44.png">
+   </p>
+   <p align = "center">
+   <i>Opening new Hardware Target</i>
+   </p>
 
 7. From the dropdown menu, click **Auto Connect.**
 
@@ -607,17 +607,17 @@ Observe the Tcl Console window and see the output is being displayed as the test
 
    ![image](./images/lab1/boolean_hw_dev_prop.png)
 
----
+   ---
 
 
-8. Click on the *Program device* link in the green information bar to program the target FPGA device. Another way is to right click on the device and select *Program Device.*
+   8. Click on the *Program device* link in the green information bar to program the target FPGA device. Another way is to right click on the device and select *Program Device.*
 
-<p align="center">
-<img src ="./images/lab1/Fig47.png">
-</p>
-<p align = "center">
-<i>Selecting to program the FPGA</i>
-</p>
+   <p align="center">
+   <img src ="./images/lab1/Fig47.png">
+   </p>
+   <p align = "center">
+   <i>Selecting to program the FPGA</i>
+   </p>
 
 9. Click **Program** to program the FPGA.
 
