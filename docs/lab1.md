@@ -610,7 +610,7 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
    ---
 
 
-   8. Click on the *Program device* link in the green information bar to program the target FPGA device. Another way is to right click on the device and select *Program Device.*
+8. Click on the *Program device* link in the green information bar to program the target FPGA device. Another way is to right click on the device and select *Program Device.*
 
    <p align="center">
    <img src ="./images/lab1/Fig47.png">
