@@ -1,5 +1,4 @@
 # Vivado Design Flow
-## LAB 1: Creating a Simple Project and Generating the Bitstream
 ### Objectives
 
 After completing this lab, you will be able to:
