@@ -1,6 +1,6 @@
 # Vivado Design Flow
-
-## Objectives
+## LAB 1: Creating a Simple Project and Generating the Bitstream
+### Objectives
 
 After completing this lab, you will be able to:
 
@@ -11,7 +11,7 @@ After completing this lab, you will be able to:
 - Generate the bitstream.
 - Configure ZYNQ and Spartan using the generated bitstream and verify the functionality.
 
-###  In the instructions for the tutorial
+##  In the instructions for the tutorial
 
 The absolute path for the source code should only contain ascii characters. Deep path should also be avoided since the maximum supporting length of path for Windows is 260 characters.
 
@@ -84,7 +84,7 @@ The absolute path for the source code should only contain ascii characters. Deep
     </p>
 
 
-    You may also select the **Boards** option, `tul.com.tw` for the PYNQ-Z2 board or `RealDigital.org` for the Boolean board under the *Vendor* filter and select the appropriate board. Notice that Boolean and  PYNQ-Z2 may not be listed as they are not in the tools database. If not listed then you can download the board files for the desired boards from the respective board vendor webpage.
+    You may also select the **Boards** option, `tulembedded.com` for the PYNQ-Z2 board or `RealDigital.org` for the Boolean board under the *Vendor* filter and select the appropriate board. Notice that Boolean and  PYNQ-Z2 may not be listed as they are not in the tools database. If not listed then you can download the board files for the desired boards from the respective board vendor webpage.
 
 11.  Click **Next**.
 
@@ -121,7 +121,7 @@ lab1
 
 
 
-#### Open the lab1.v source and analyze the content.
+### Open the lab1.v source and analyze the content.
 
 1. In the *Sources* pane, double-click the **lab1.v** entry to open the file in text mode.
 
@@ -138,9 +138,9 @@ lab1
 
 4. Lines 8-9 defines the input and output ports whereas lines 12-15 defines the actual functionality.
 
-#### Open the lab1_{BOARDS}.xdc source and analyze the content.
+### Open the lab1_{BOARDS}.xdc source and analyze the content.
 
-##### For PYNQ-Z2:
+#### For PYNQ-Z2:
 
 1. In the *Sources* pane, expand the *Constraints* folder and double-click the **lab1\_pynq.xdc** entry to open the file in text mode.
 
@@ -153,7 +153,7 @@ lab1
 
 2. Lines 5-8 define the pin locations for the input buttons and lines 13-16 define pin locations for output LEDs.
 
-##### For Boolean
+#### For Boolean
 
 1. In the *Sources* pane, expand the *Constraints* folder and double-click the **lab1\_boolean.xdc** entry to open the file in text mode.
 
@@ -176,7 +176,7 @@ The model (design) will be elaborated and a logic view of the design is displaye
 
 ### Simulate the Design using the Vivado Simulator
 
-#### Add the lab1\_tb.v testbench file.
+### Add the lab1\_tb.v testbench file.
 
 1. Click **Add Sources** under the *Project Manager* tasks of the *Flow Navigator* pane.
 
@@ -366,9 +366,7 @@ Observe the Tcl Console window and see the output is being displayed as the test
 
 6. Click **OK** and then click **Discard** to close it without saving the waveform.
 
-### Synthesize the Design
-
-#### Synthesize the design with the Vivado synthesis tool and analyze the Project Summary output.
+### Synthesize the Design and Analyze the Project Summary Output.
 
 1. Click on **Run Synthesis** under the *SYNTHESIS* tasks of the *Flow Navigator* pane.
 
@@ -427,9 +425,7 @@ Observe the Tcl Console window and see the output is being displayed as the test
 
 
 ### Implement the Design
-
-#### Implement the design with the Vivado Implementation Defaults settings and analyze the Project Summary output.    
-
+ 
 1. Click on **Run Implementation** under the *Implementation* tasks of the *Flow Navigator* pane.
 
    The implementation process will be run on the synthesized design.  When the process is completed an *Implementation Completed* dialog box with three options will be displayed. You can choose to use how many jobs you want to implement this design. In general, more jobs consumes more computing resources and less runtime
@@ -488,8 +484,7 @@ Observe the Tcl Console window and see the output is being displayed as the test
 </p>					
 
 ### Perform Timing Simulation
-
-#### Run a timing simulation.  
+ 
 
 1. Select **Run Simulation > Run Post-Implementation Timing Simulation** process under the *Simulation* tasks of the *Flow Navigator* pane.
 
