@@ -3,21 +3,25 @@ layout: default
 ---
 
 
-# Vivado FPGA Design Flow on Spartan and Zynq
-This workshop provides participants the necessary skills to develop digital design in Xilinx FPGA fabric and become familiar with synthesis, implementation, I/O planning, simulation, static timing analysis and debug features of Vivado.
+# Vivado FPGA Design Flow Workshop on Spartan and Zynq
+## Introduction
+Welcome to the XUP Vivado FPGA Design Flow Workshop.  This workshop provides participants the necessary skills to develop digital design in AMD/Xilinx FPGA fabric using Spartan and Zynq devices.The topics covered in this tutorial are as follows: 
+1. Design synthesis. 
+1. Implementation. 
+1. I/O planning. 
+1. Simulation.
+1. Static timing analysis.
+1. Debug features of Vivado.
 
-The labs have been developed on a PC running Microsoft Windows 10 professional edition and using **Vivado 2021.2** version tools.
+The labs have been developed on a PC running Microsoft Windows 10 professional edition and using **Vivado 2021.2**.
+## Setup
+### Source Files 
 
-## Change Log
-
-2022 : Upgrade the tool version to Vivado 2021.2, adding support for Boolean board. At this time, tutorial sources and docs for boolean has finished initial release, PYNQ-Z2 will be followed up as soon as possible.
-
-## Source Files Setup
-
+For simplicity we suggest you clone [this git repository](https://github.com/Xilinx/xup_fpga_vivado_flow) to your machine.
 All the source files are located in the path of **{this_repo}/sources/boards**
 
 ---
-#### In the instructions for the labs
+### In the instructions for the labs
 
 The absolute path for the source code should only contain ascii characters. Deep path should also be avoided since the maximum supporting length of path for Windows is 260 characters.
 
@@ -36,7 +40,7 @@ Board support for the Boolean and PYNQ-Z2 are not included in Vivado 2021.2 by d
 
 **For Pynq-z2:**
 
-When creating Vivado projects, targeting to the parts  to specify the device, The Boolean uses a **xc7z020clg400-1** Zynq-7 device with the following attributes:
+When creating Vivado projects, targeting to the parts to specify the device, The Boolean uses a **xc7z020clg400-1** Zynq-7 device with the following attributes:
 
 | **Part Number**       | xc7z020clg400-1 |
 | --------------------- | --------------- |
@@ -47,7 +51,7 @@ When creating Vivado projects, targeting to the parts  to specify the device, Th
 
 **For Boolean:**
 
-When creating Vivado projects, targeting to the parts  to specify the device, The Boolean uses a **xc7s50csga342-1** Spartan-7 device with the following attributes:
+When creating Vivado projects, targeting to the parts to specify the device, The Boolean uses a **xc7s50csga342-1** Spartan-7 device with the following attributes:
 
 | **Part Number**       | xc7s50csga342-1 |
 | --------------------- | --------------- |
@@ -58,7 +62,7 @@ When creating Vivado projects, targeting to the parts  to specify the device, Th
 
 ---
 
-## Hardware Setup
+### Hardware Setup
 
 **PYNQ-Z2**: Connect the board to the PC using a micro USB cable. Make sure that a jumper is connected to JTAG (between JP1_1 and JP1_2) to use the board in the development mode. Also, make sure that another jumper is placed between J9_2 and J9_3 to select USB as a power source.
 
@@ -96,6 +100,9 @@ In this lab you will use the uart_led design that was introduced in the previous
 ### Lab 6
 In this lab you will use the uart_led design that was introduced in the previous labs. You will use Mark Debug feature and also the available Integrated Logic Analyzer (ILA) core (in IP Catalog) to debug the hardware.
 
+## Change Log
+
+2022 : Upgrade the tool version to Vivado 2021.2, adding support for Boolean board. At this time, tutorial sources and docs for boolean has finished initial release, PYNQ-Z2 will be followed up as soon as possible.
 
 ---------------------------------------
 <p align="center">Copyright&copy; 2022 AMD-Xilinx</p>
