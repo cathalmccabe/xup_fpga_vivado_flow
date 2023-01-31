@@ -224,9 +224,9 @@ The Report Timing Summary dialog box opens.
 
    ![Fig1](images/lab3/Fig12.png)
 
-   <p align = "center">
-   <i>First failing path delays for the Boolean</i>
-   </p>
+<p align = "center">
+<i>First failing path delays for the Boolean</i>
+</p>
 
    Compared to delays from the synthesis report, the net delays are actual delays (rather than an estimated figure). The data path delay is longer than the destination clock path delay giving a negative slack (violation). The data path delay is 11.534 ns for the Boolean, the destination clock path is 9.975 ns and the negative slack is -1.559 ns (in this case).
    At this point we can ignore this violation as the LED display change by a few nanoseconds won’t be observable by human eyes. We can also change the output delay by approximately -2 ns and make the timings meet.
