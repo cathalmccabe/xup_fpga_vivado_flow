@@ -638,4 +638,4 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
 The Vivado software tool can be used to perform a complete HDL based design flow.  The project was created using the supplied source files (HDL model and user constraint file). A behavioral simulation using the provided testbench was done to verify the model functionality. The model was then synthesized, implemented, and a bitstream was generated.  The timing simulation was run on the implemented design using the same testbench. The functionality was verified in hardware using the generated bitstream.  
 
 ------------------------------------------------------
-<p align="center">Copyright&copy; 2022, Advanced Micro Devices, Inc.</p>
+<p align="center">Copyright&copy; 2023, Advanced Micro Devices, Inc.</p>

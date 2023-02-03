@@ -578,4 +578,4 @@ In this lab, you learned how to create an I/O Planning project and assign the pi
 
 
 ------------------------------------------------------
-<p align="center">Copyright&copy; 2022, Advanced Micro Devices, Inc.</p>
+<p align="center">Copyright&copy; 2023, Advanced Micro Devices, Inc.</p>

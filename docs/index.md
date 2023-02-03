@@ -106,4 +106,4 @@ In this lab you will use the uart_led design that was introduced in the previous
 2022 : Upgrade the tool version to Vivado 2021.2, adding support for Boolean board. At this time, tutorial sources and docs for boolean has finished initial release, PYNQ-Z2 will be followed up as soon as possible.
 
 ---------------------------------------
-<p align="center">Copyright&copy; 2022 AMD-Xilinx</p>
+<p align="center">Copyright&copy; 2023 AMD-Xilinx</p>

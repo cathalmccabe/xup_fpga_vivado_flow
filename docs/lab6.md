@@ -502,4 +502,4 @@ You used ILA core from the IP Catalog and Mark Debug feature of Vivado to debug 
 
 
 ------------------------------------------------------
-<p align="center">Copyright&copy; 2022, Advanced Micro Devices, Inc.</p>
+<p align="center">Copyright&copy; 2023, Advanced Micro Devices, Inc.</p>
