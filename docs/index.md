@@ -17,7 +17,8 @@ The labs have been developed on a PC running Microsoft Windows 10 professional e
 ## Setup
 ### Source Files 
 
-For simplicity we suggest you clone [this git repository](https://github.com/Xilinx/xup_fpga_vivado_flow) to your machine.
+For simplicity we suggest you clone [this git repository](https://github.com/Xilinx/xup_fpga_vivado_flow) to your machine by running the following command:
+    git clone https://github.com/Xilinx/xup_fpga_vivado_flow
 All the source files are located in the path of **{this_repo}/sources/boards**
 
 ---
