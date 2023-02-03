@@ -24,4 +24,4 @@ layout: default
 | Lab 6 Introduction | [![alt text](images/pdf.png)](https://github.com/Xilinx/xup_fpga_vivado_flow/blob/main/slides/17a_Lab6 Intro.pdf) |
 
 ---------------------------------------
-<p class="copyright">Copyright&copy; 2021 Xilinx</p>
+<p class="copyright">Copyright&copy; 2023 Xilinx</p>
