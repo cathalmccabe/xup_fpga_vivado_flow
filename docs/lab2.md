@@ -380,11 +380,11 @@ You can move the mouse on the boxes which do not show the percentage to see the 
 9. Click on **Schematic** under the *Open Synthesized Design* tasks of *Synthesis* tasks of the *Flow Navigator* pane to view the synthesized design in a schematic view.
    Notice that the design is completely flattened.
 
-   ![image-20220222143623444](images/lab2/Fig18.png)
-
-   <p align = "center">
+   <p align="center">
+   <img src ="images/lab2/Fig18.png">
    <i>Flattened design</i>
    </p>
+   
 
 
 10. Click on **Report Utilization** and observe that the hierarchical utilization is no longer available.
