@@ -98,15 +98,15 @@ The absolute path for the source code should only contain ascii characters. Deep
 
    1. Copy the tcl script `ps_init.tcl` from **{SOURCES}/pynq-z2/lab2** to **{TUTORIAL}/lab2**.In the Tcl Shell window enter the following command to change to the lab directory and hit **Enter**.
 
-   ```tcl
-   cd {TUTORIAL}/lab2
-   ```
+      ```tcl
+      cd {TUTORIAL}/lab2
+      ```
 
    2. Generate the PS design by executing the provided Tcl script.
 
-   ```tcl
-   source ps_init.tcl
-   ```
+      ```tcl
+      source ps_init.tcl
+      ```
 
    Please check if the path in the tcl script is correct or not.
 
@@ -427,9 +427,7 @@ You can move the mouse on the boxes which do not show the percentage to see the 
 
    This will invoke second Vivado GUI.
 
-10. If the schematic isn’t open by default, in the netlist tab, select the top-level instance, *uart_led*, right-click and select Schematic.
-
-   You will see the flattened design.
+10. If the schematic isn’t open by default, in the netlist tab, select the top-level instance, *uart_led*, right-click and select Schematic.  You will see the flattened design.
 
 11. You can generate the desired reports on this checkpoint as you wish.
 
