@@ -587,11 +587,9 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
 
    <p align="center">
    <img src ="./images/lab1/Fig46.png">
-   </p>
-    
-   <p align = "center">
    <i>Programming File</i>
    </p>
+    
 
    **For Boolean**:
 
