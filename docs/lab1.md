@@ -595,17 +595,19 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
 
    The Hardware Session status changes from Unconnected to the server name and the device is highlighted. Also notice that the Status indicates that it is not programmed.
 
-   ![Opened hardware session](./images/lab1/boolean_hwmg.png)
-
 
 
    <p align = "center">
+   <img src ="./images/lab1/boolean_hwmg.png">
    <i>Opened hardware manager session</i>
    </p>
 
    Select the device and verify that the lab1.bit is selected as the programming file in the General tab.
 
-   ![image](./images/lab1/boolean_hw_dev_prop.png)
+
+   <p align = "center">
+   <img src ="./images/lab1/boolean_hw_dev_prop.png">
+   </p>
 
    ---
 
