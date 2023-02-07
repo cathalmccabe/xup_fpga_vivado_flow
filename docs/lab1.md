@@ -568,7 +568,7 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
 
 7. From the dropdown menu, click **Auto Connect.**
 
-   ---
+
 
    **For PYNQ-Z2**:
 
@@ -577,6 +577,7 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
    <p align="center">
    <img src ="./images/lab1/Fig45.png">
    </p>
+   
    <p align = "center">
    <i>Opened hardware manager session</i>
    </p>
@@ -609,7 +610,7 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
    <img src ="./images/lab1/boolean_hw_dev_prop.png">
    </p>
 
-   ---
+
 
 
 8. Click on the *Program device* link in the green information bar to program the target FPGA device. Another way is to right click on the device and select *Program Device.*
