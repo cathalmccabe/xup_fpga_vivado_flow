@@ -574,9 +574,7 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
 
    The Hardware Session status changes from Unconnected to the server name and the device is highlighted. Also notice that the Status indicates that it is not programmed.
 
-   <p align="center">
-   <img src ="./images/lab1/Fig45.png">
-   </p>
+   ![image-20220222143623444](./images/lab1/Fig45.png)
 
    <p align = "center">
    <i>Opened hardware manager session</i>
