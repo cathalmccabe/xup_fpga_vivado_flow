@@ -483,12 +483,12 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 11. Select the corresponding waveform window and verify that it shows 55 after the trigger.
 
-    <p align="center">
-    <img src ="./images/lab6/Fig29.png">
-    </p>
-    <p align = "center">
-    <i>Second ila core triggered</i>
-    </p>
+   <p align="center">
+   <img src ="./images/lab6/Fig29.png">
+   </p>
+   <p align = "center">
+   <i>Second ila core triggered</i>
+   </p>
 
 12. When satisfied, Select **File > Close Hardware Manager**. Click **OK** to close it.
 
