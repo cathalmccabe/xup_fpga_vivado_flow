@@ -149,29 +149,28 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 3. Select *Add or Create Design Sources* and click **Next**.
 
-5. In the *File Type* field, select **All Files**, and then select **char\_fifo.xcix** file.
+4. In the *File Type* field, select **All Files**, and then select **char\_fifo.xcix** file.
 
-6. Click on the **Blue Plus** button, then the **Add Files…** button and browse to **{SOURCES}\lab4**
+5. Click on the **Blue Plus** button, then the **Add Files…** button and browse to **{SOURCES}\lab4**
 
-7. In the *File Type* field, select **All Files**, and then select **clogb2.txt** file.
+6. In the *File Type* field, select **All Files**, and then select **clogb2.txt** file.
 
-8. Click **OK** and then **Finish**.
+7. Click **OK** and then **Finish**.
 
-9. In the *Sources* pane, expand *Design Sources* and *wave\_gen\_top* and wave\_gen if necessary, and double-click on the **clk\_gen\_i0** entry.
+8. In the *Sources* pane, expand *Design Sources* and *wave\_gen\_top* and wave\_gen if necessary, and double-click on the **clk\_gen\_i0** entry.
 
    Scroll down the file and notice that around line 79 there is an instruction to instantiate a clock core.
 
-   ---
-
+   
    **For PYNQ-Z2**
 
-10. In the Tcl Shell window enter the following command to change to the lab directory and hit **Enter**.
+9. In the Tcl Shell window enter the following command to change to the lab directory and hit **Enter**.
 
-    ```tcl
-    cd {SOURCES}/lab4
-    ```
+   ```tcl
+   cd {SOURCES}/lab4
+   ```
 
-11. Generate the PS design by executing the provided Tcl script.
+10. Generate the PS design by executing the provided Tcl script.
 
     ```tcl
     source ps_init.tcl
@@ -179,7 +178,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
     This script will create a block design called *system*, instantiate ZYNQ PS, enable two GPIO channels (GPIO14 and GPIO15) and two EMIO channels. It will create **system.bd** that is instantiated under `system\_wrapper.v wrapper` file. You can check the contents of the tcl file to confirm the commands that are being run.
 
----
+
 
 
 ### Step 2 Generate and Instantiate Clock Generator Module
@@ -671,14 +670,14 @@ The *char\_fifo\_wrapper.v* instantiation template is opened in the text editor 
 
 5. Open the hardware manager and program the FPGA.
 
-   ---
+   
 
    **Extra Steps for PYNQ-Z2**
 
    Will be delivered after completing the boot image of PYNQ-Z2.
 
 
-   ---
+   
 
 6. verify the functionality of the design in the hardware.
 7. When done, close the **Vivado** program by selecting **File > Exit** and click **OK**.
