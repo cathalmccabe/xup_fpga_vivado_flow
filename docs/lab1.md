@@ -258,54 +258,54 @@ The model (design) will be elaborated and a logic view of the design is displaye
 
    Notice that the **lab1.sim** directory is created under the **lab1** directory, along with several lower-level directories.
 
-```
-//Directory structure after running behavioral simulation
-lab1.sim  
-└─sim_1
-    └─behav
-        └─xsim
-            │  compile.bat
-            │  compile.log
-            │  elaborate.bat
-            │  elaborate.log
-            │  glbl.v
-            │  lab1_tb.tcl
-            │  lab1_tb_behav.wdb
-            │  lab1_tb_vlog.prj
-            │  simulate.bat
-            │  simulate.log
-            │  xelab.pb
-            │  xsim.ini
-            │  xvlog.log
-            │  xvlog.pb
-            │  
-            └─xsim.dir
-                ├─lab1_tb_behav
-                │  │  Compile_Options.txt
-                │  │  TempBreakPointFile.txt
-                │  │  xsim.dbg
-                │  │  xsim.mem
-                │  │  xsim.reloc
-                │  │  xsim.rlx
-                │  │  xsim.rtti
-                │  │  xsim.svtype
-                │  │  xsim.type
-                │  │  xsim.xdbg
-                │  │  xsimcrash.log
-                │  │  xsimk.exe
-                │  │  xsimkernel.log
-                │  │  
-                │  └─obj
-                │          xsim_0.win64.obj
-                │          xsim_1.c
-                │          xsim_1.win64.obj
-                │          
-                └─xil_defaultlib
-                        glbl.sdb
-                        lab1.sdb
-                        lab1_tb.sdb
-                        xil_defaultlib.rlx
-```
+   ```
+   //Directory structure after running behavioral simulation
+   lab1.sim  
+   └─sim_1
+      └─behav
+         └─xsim
+               │  compile.bat
+               │  compile.log
+               │  elaborate.bat
+               │  elaborate.log
+               │  glbl.v
+               │  lab1_tb.tcl
+               │  lab1_tb_behav.wdb
+               │  lab1_tb_vlog.prj
+               │  simulate.bat
+               │  simulate.log
+               │  xelab.pb
+               │  xsim.ini
+               │  xvlog.log
+               │  xvlog.pb
+               │  
+               └─xsim.dir
+                  ├─lab1_tb_behav
+                  │  │  Compile_Options.txt
+                  │  │  TempBreakPointFile.txt
+                  │  │  xsim.dbg
+                  │  │  xsim.mem
+                  │  │  xsim.reloc
+                  │  │  xsim.rlx
+                  │  │  xsim.rtti
+                  │  │  xsim.svtype
+                  │  │  xsim.type
+                  │  │  xsim.xdbg
+                  │  │  xsimcrash.log
+                  │  │  xsimk.exe
+                  │  │  xsimkernel.log
+                  │  │  
+                  │  └─obj
+                  │          xsim_0.win64.obj
+                  │          xsim_1.c
+                  │          xsim_1.win64.obj
+                  │          
+                  └─xil_defaultlib
+                           glbl.sdb
+                           lab1.sdb
+                           lab1_tb.sdb
+                           xil_defaultlib.rlx
+   ```
 
 
    You will see several buttons next to the waveform window which can be used for the specific purpose as listed in the table below.
