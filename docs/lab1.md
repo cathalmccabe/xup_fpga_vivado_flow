@@ -585,8 +585,10 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
 
    Select the device and verify that the lab1.bit is selected as the programming file in the General tab.
 
-   <p align="center">
+   <div align= "center">
    <img src ="./images/lab1/Fig46.png">
+   </div>
+   <p align="center">
    <i>Programming File</i>
    </p>
     
