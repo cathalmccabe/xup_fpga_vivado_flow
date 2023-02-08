@@ -342,7 +342,7 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
 
 2. Select **btn[3:0]** and **led[3:0]** and drag them into the waveform window to monitor those lower-level signals.
 
-3. On the simulator tool buttons ribbon bar![](./images/lab1/Fig23.png), type 500 over in the simulation run time field,  click on the drop-down button of the units field and select *ns* since we want to run for 500 ns (total of 700 ns), and click on the (  ![](./images/lab1/Fig25.png) ) button. The simulation will run for an additional 500 ns.     
+3. On the simulator tool buttons ribbon bar (![](./images/lab1/Fig23.png)), type 500 over in the simulation run time field,  click on the drop-down button of the units field and select *ns* since we want to run for 500 ns (total of 700 ns), and click on the (![](./images/lab1/Fig25.png)) button. The simulation will run for an additional 500 ns.     
 4. Click on the *Zoom Fit* button and observe the output.
 
    <p align="center">
