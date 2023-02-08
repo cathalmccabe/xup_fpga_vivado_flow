@@ -31,14 +31,16 @@ Boolean board will be using the on-board UART port to implement such function, w
 
 ---
 
-![images](./images/lab5/Fig1.png)
-
+<div align = "center">
+<img src ="images/lab5/Fig1.png">
+</div>
 <p align = "center">
 <i>The Complete Design on PL</i>
 </p>
 
-![images](images/lab5/Fig2.png)
-
+<div align = "center">
+<img src ="images/lab5/Fig2.png">
+</div>
 <p align = "center">
 <i>The Complete System on PYNQ-Z2</i>
 </p>
@@ -96,14 +98,17 @@ The absolute path for the source code should only contain ascii characters. Deep
 
    The device view window and package pins tab will be displayed.
 
-   [![images](./images/lab5/Fig4.png)](./images/lab5/Fig4.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig4.png">
+   </div>
 
    <p align = "center">
    <i>I/O Planning project’s default windows and views (PYNQ-Z2)</i>
    </p>
 
-   ![images](./images/lab5/boolean_io.png)
-
+   <div align = "center">
+   <img src ="images/lab5/boolean_io.png">
+   </div>
    <p align = "center">
    <i>I/O Planning project’s default windows and views (Boolean)</i>
    </p>
@@ -118,8 +123,9 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 2. Type **clk_pin** in the *Name* field, select **Input** for the *Direction* and select **LVCMOS33** as the *I/O Standard*, and click **OK**.
 
-   ![images](./images/lab5/Fig5.png)
-
+   <div align = "center">
+   <img src ="images/lab5/Fig5.png">
+   </div>
    <p align = "center">
    <i>Creating I/O Port for clk_pin input</i>
    </p>
@@ -134,7 +140,9 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 Hover the mouse over **H16**(PYNQ-Z2) or **F14**(Boolean) in the Device view window.
 
-[![images](./images/lab5/Fig6.png)](./images/lab5/Fig6.png)
+<div align = "center">
+<img src ="images/lab5/Fig6.png">
+</div>
 
 <p align = "center">
 <i>Locating H16 pin in the Device view(PYNQ-Z2)</i>
@@ -150,7 +158,9 @@ Hover the mouse over **H16**(PYNQ-Z2) or **F14**(Boolean) in the Device view win
 
 4. Select **Edit > Find** or Ctrl-F to open the Find form. Select **Package Pins** in the *Find* drop-down field, type **D20**(PYNQ-Z2) or **J5**(Boolean) in the match criteria field, and click on **OK**.
 
-   [![images](./images/lab5/Fig7.png)](./images/lab5/Fig7.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig7.png">
+   </div>
 
    <p align = "center">
    <i>Finding a package pin(PYNQ-Z2)</i>
@@ -168,7 +178,9 @@ Hover the mouse over **H16**(PYNQ-Z2) or **F14**(Boolean) in the Device view win
 
 1. In the I/O Ports tab, click on the create I/O port button on the left vertical ribbon.
 
-   [![images](./images/lab5/Fig8.png)](./images/lab5/Fig8.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig8.png">
+   </div>
    <p align = "center">
    <i>Create I/O Ports button</i>
    </p>
@@ -177,7 +189,9 @@ Hover the mouse over **H16**(PYNQ-Z2) or **F14**(Boolean) in the Device view win
 
 2. Type **led_pins** in the *Name* field, select *Output* direction, click on the check-box of **Create bus**, set the msb to **7**, and select **LVCMOS33** I/O standard and click **OK**.
 
-   ![images](./images/lab5/Fig9.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig9.png">
+   </div>
 
    <p align = "center">
    <i>Creating I/O ports for the led_pins output</i>
@@ -224,7 +238,9 @@ Hover the mouse over **H16**(PYNQ-Z2) or **F14**(Boolean) in the Device view win
 
 5. Enter **uart_led_{BOARDS}** in the *File name* field, and click **OK**.
 
-   ![images](./images/lab5/Fig10.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig10.png">
+   </div>
 
    <p align = "center">
    <i>Saving constraints</i>
@@ -233,7 +249,9 @@ Hover the mouse over **H16**(PYNQ-Z2) or **F14**(Boolean) in the Device view win
 
    The uart_led_{BOARDS}.xdc file will be created and added to the Sources tab.
 
-   ![images](./images/lab5/Fig11.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig11.png">
+   </div>
 
    <p align = "center">
    <i>The uart_led.xdc file added to the source tree</i>
@@ -251,7 +269,9 @@ Hover the mouse over **H16**(PYNQ-Z2) or **F14**(Boolean) in the Device view win
 
 6. Change *io_1.v* to **uart_led.v(for PYNQ-Z2)** or **uart_top.v(for Boolean)**, and click **OK**
 
-   ![images](./images/lab5/Fig12.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig12.png">
+   </div>
 
    <p align = "center">
    <i>Assigning top-level file name(for Boolean)</i>
@@ -260,7 +280,9 @@ Hover the mouse over **H16**(PYNQ-Z2) or **F14**(Boolean) in the Device view win
 
 7. Select the **Hierarchy** tab and notice that the *uart_top.v* file has been added to the project with top-level module name as **ios**. If you double-click the entry, you will see the module name with the ports listing.
 
-   ![images](./images/lab5/Fig13.png)
+<div align = "center">
+<img src ="images/lab5/Fig13.png">
+</div>
 
 <p align = "center">
 <i>The top-level module content and the design hierarchy after migrating to RTL</i>
@@ -301,7 +323,9 @@ Hover the mouse over **H16**(PYNQ-Z2) or **F14**(Boolean) in the Device view win
 
 Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined to be 115200 and 125 MHz(PYNQ-Z2) or 100 MHz (Boolean) respectively.
 
-![images](./images/lab5/Fig14.png)
+<div align = "center">
+<img src ="images/lab5/Fig14.png">
+</div>
 
 <p align = "center">
 <i>CLOCK_RATE parameter of uart_led</i>
@@ -324,7 +348,9 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
 
 5. Specify the frequency of the object *clk_pin* to be **125 MHz**(PYNQ-Z2) or **100MHz**(Boolean), notice the Period, Rise At and Fall At are automatically populated. Also notice the Tcl command that can be previewed at the bottom of the wizard. Click **Next** to proceed.
 
-   ![images](./images/lab5/Fig15.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig15.png">
+   </div>
 
    <p align = "center">
    <i>Constraints Wizard clk_pin parameters and Tcl command</i>
@@ -343,7 +369,9 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
    - Notice that under the Tcl Command Preview tab, 4 Tcl commands have been generated.
    - Click **Next**.
 
-   ![images](./images/lab5/Fig16.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig16.png">
+   </div>
 
    <p align = "center">
    <i>Specifying Input Delays for btn_pin and rst_pin(PYNQ-Z2)</i>
@@ -358,19 +386,21 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
 
 13. **Check** *On Finish –* **View Timing Constraints** and click **Finish** to close the wizard. The option will open the *Timing Constraints Editor* to show you the generated timing constraint.
 
-    [![images](./images/lab5/Fig17.png)](./images/lab5/Fig17.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig17.png">
+   </div>
 
-
-
-    <p align = "center">
-    <i>Selecting View Timing constraints</i>
-    </p>
+   <p align = "center">
+   <i>Selecting View Timing constraints</i>
+   </p>
 
 14. Note the wizard generated the *clk_pin* constraint for a **8** ns period (or 125 MHz)(PYNQ-Z2) or **10** ns period (or 100MHz)(Boolean). Notice in the *All Constraints* window, 7/9 constraints will be created.
 
     There is no need to click Apply since the constraints have already been applied in the Constraints Wizard.
 
-    [![images](./images/lab5/Fig18.png)](./images/lab5/Fig18.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig18.png">
+   </div>
 
     <p align = "center">
     <i>The constraints added after using the Constraints Wizard</i>
@@ -384,7 +414,9 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
 
 2. In the **Options** tab, select *min_max* from the *Path delay type* drop-down list.
 
-   [![images](./images/lab5/Fig19.png)](./images/lab5/Fig19.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig19.png">
+   </div>
 
    <p align = "center">
    <i>Performing timing analysis</i>
@@ -394,7 +426,9 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
 
    The Timing Results view opens at the bottom of the Vivado IDE.
 
-   [![images](./images/lab5/Fig20.png)](./images/lab5/Fig20.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig20.png">
+   </div>
 
    <p align = "center">
    <i>Timing summary</i>
@@ -406,7 +440,9 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
 
 4. Click on the link next to *Worst Hold Slack* (WHS) to see the list of failing paths.
 
-   [![images](./images/lab5/Fig21.png)](./images/lab5/Fig21.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig21.png">
+   </div>
 
    <p align = "center">
    <i>The list of paths showing hold violations</i>
@@ -414,7 +450,9 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
 
 5. Double-click on the *Path 11* to see the actual path detail.
 
-   [![images](./images/lab5/Fig22.png)](./images/lab5/Fig22.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig22.png">
+   </div>
 
    <p align = "center">
    <i>Failing hold path</i>
@@ -423,7 +461,9 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
 
 6. Select *Path 11*, right-click and select **Schematic**.
 
-   [![images](./images/lab5/Fig23.png)](./images/lab5/Fig23.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig23.png">
+   </div>
 
    <p align = "center">
    <i>The schematic of the failing path</i>
@@ -454,7 +494,9 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
 
    Note that failing timing paths are indicated in red.
 
-   [![images](./images/lab5/Fig24.png)](./images/lab5/Fig24.png)
+   <div align = "center">
+   <img src ="images/lab5/Fig24.png">
+   </div>
 
    <p align = "center">
    <i>Failing setup paths</i>
@@ -504,8 +546,10 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
    The Hardware Manager window will open indicating “unconnected” status.
 3. Click on the **Open target** link, then **Auto Connect** from the dropdown menu.
 
-  ![fig1](images/lab5/fig15-16479350107761.png)
 
+   <div align = "center">
+   <img src ="images/lab5/fig15-16479350107761.png">
+   </div>
    <p align = "center">
    <i>Opening new hardware target</i>
    </p>
@@ -523,7 +567,9 @@ Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined 
 3. Select the *Open Hardware Manager* option and click **OK**.
    The Hardware Manager window will open indicating “unconnected” status.
 
-  ![fig1](images/lab5/fig15-16479350107761.png)
+   <div align = "center">
+   <img src ="images/lab5/fig15-16479350107761.png">
+   </div>
 
    <p align = "center">
    <i>Opening new hardware target</i>
