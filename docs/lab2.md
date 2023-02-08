@@ -25,7 +25,10 @@ The design consists of a uart receiver receiving the input typed on a keyboard a
 equivalent of the typed character on the 8 LEDs. When a push button is pressed, the lower and upper
 nibbles are swapped. The block diagram is as shown in the following figure.
 
-![image-20220222143623444](images/lab2/Fig1.png)
+
+<div align = "center">
+<img src ="images/lab2/Fig1.png">
+</div>
 
 <p align = "center">
 <i>The Completed Design</i>
@@ -65,7 +68,10 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 5. Select **RTL Project** option in the *Project Type* form, and click **Next**.
 
-   ![image-20220222143623444](images/lab2/create_new_prj.png)
+
+   <div align = "center">
+   <img src ="images/lab2/create_new_prj.png">
+   </div>
 
    <p align = "center">
    <i>Create a new project</i>
@@ -271,7 +277,9 @@ The absolute path for the source code should only contain ascii characters. Deep
    pane.
 2. Click **OK** to generate the Timing_1 report.
 
-   ![image-20220222143623444](images/lab2/Fig9.png)
+   <div align = "center">
+   <img src ="images/lab2/Fig9.png">
+   </div>
 
    <p align = "center">
    <i>Timing report for the Boolean</i>
@@ -283,7 +291,9 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 3. Click on the WNS link and see the 8 failing paths.
 
-   ![image-20220222143623444](images/lab2/Fig10.png)
+   <div align = "center">
+   <img src ="images/lab2/Fig10.png">
+   </div>
 
    <p align = "center">
    <i>The 8 failing paths for the Boolean</i>
@@ -291,7 +301,9 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 4. Double-click on the **Path 23** to see how the path is made.
 
-   ![image-20220222143623444](images/lab2/Fig11.png)
+   <div align = "center">
+   <img src ="images/lab2/Fig11.png">
+   </div>
 
    <p align = "center">
    <i>Worst failing path for the Boolean</i>
@@ -334,7 +346,10 @@ The absolute path for the source code should only contain ascii characters. Deep
    Note that this is just an estimate as no simulation run data was provided and no accurate activity
    rate, or environment information was entered.
 
-![image-20220222143623444](images/lab2/Fig14.png)
+
+   <div align = "center">
+   <img src ="images/lab2/Fig14.png">
+   </div>
 
 **Question 3**
 From the power report, find the % power consumption used by each of the following:
