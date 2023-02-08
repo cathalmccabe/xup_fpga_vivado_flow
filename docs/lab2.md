@@ -117,7 +117,7 @@ The absolute path for the source code should only contain ascii characters. Deep
 1. In the Sources pane, expand the uart_led entry and notice hierarchy of the lower-level modules.
 
    <div align = "center">
-   <img src =".images/lab2/Fig2.png">
+   <img src ="images/lab2/Fig2.png">
    </div>
 
    <p align = "center">
@@ -137,7 +137,7 @@ The absolute path for the source code should only contain ascii characters. Deep
 4. In the *Sources* pane, expand the *Constraints* folder and double-click the *uart_led_timing_{BOARD}.xdc*  entry to open the file in text mode.
 
    <div align = "center">
-   <img src =".images/lab2/Fig3.png">
+   <img src ="images/lab2/Fig3.png">
    </div>
    <p align = "center">
    <i>Timing constraints</i>
@@ -154,7 +154,7 @@ The absolute path for the source code should only contain ascii characters. Deep
    The model (design) will be elaborated and a logical view of the design is displayed.
 
    <div align = "center">
-   <img src =".images/lab2/Fig4.png">
+   <img src ="images/lab2/Fig4.png">
    </div>
    <p align = "center">
    <i>A logic view of the design</i>
@@ -172,7 +172,7 @@ The absolute path for the source code should only contain ascii characters. Deep
 
    
    <div align = "center">
-   <img src =".images/lab2/Fig5.png">
+   <img src ="images/lab2/Fig5.png">
    </div>
    <p align = "center">
    <i>Lower level components of the uart_rx_i0 module</i>
@@ -184,7 +184,7 @@ The absolute path for the source code should only contain ascii characters. Deep
 
    
    <div align = "center">
-   <img src =".images/lab2/Fig6.png">
+   <img src ="images/lab2/Fig6.png">
    </div>
    <p align = "center">
    <i>Noise report</i>
@@ -206,7 +206,7 @@ The absolute path for the source code should only contain ascii characters. Deep
 
    
    <div align = "center">
-   <img src =".images/lab2/Fig7.png">
+   <img src ="images/lab2/Fig7.png">
    </div>
 
 9. Click on the **Reload** link. The constraints will be processed.
@@ -246,7 +246,7 @@ The absolute path for the source code should only contain ascii characters. Deep
    *Navigator* pane to view the synthesized design in a schematic view.
 
    <div align = "center">
-   <img src =".images/lab2/Fig8.png">
+   <img src ="images/lab2/Fig8.png">
    </div>
    <p align = "center">
    <i>Synthesized design’s schematic view</i>
@@ -304,7 +304,7 @@ The absolute path for the source code should only contain ascii characters. Deep
 1. Click **Report Utilization** under the *Synthesized Design*, and click **OK** to generate the utilization report.
 
    <div align = "center">
-   <img src =".images/lab2/Fig12.png">
+   <img src ="images/lab2/Fig12.png">
    </div>
 
    <p align = "center">
@@ -324,7 +324,7 @@ The absolute path for the source code should only contain ascii characters. Deep
 2. Select Slice LUTs entry in the left pane and see the utilization by lower-level instances. You can    expand the instances in the right pane to see the complete hierarchy utilization.
 
    <div align = "center">
-   <img src =".images/lab2/Fig13.png">
+   <img src ="images/lab2/Fig13.png">
    </div>
    <p align = "center">
    <i>Utilization of lower-level modules for the Boolean</i>
@@ -355,7 +355,7 @@ You can move the mouse on the boxes which do not show the percentage to see the 
 
    
    <div align = "center">
-   <img src =".images/lab2/Fig15.png">
+   <img src ="images/lab2/Fig15.png">
    </div>
    <p align = "center">
    <i>Wiring Checkpoint</i>
@@ -370,7 +370,7 @@ You can move the mouse on the boxes which do not show the percentage to see the 
 
    ![image-20220222143623444](images/lab2/Fig16.png)
    <div align = "center">
-   <img src =".images/lab2/Fig15.png">
+   <img src ="images/lab2/Fig15.png">
    </div>
    <p align = "center">
    <i>Selecting flatten hierarchy option</i>
