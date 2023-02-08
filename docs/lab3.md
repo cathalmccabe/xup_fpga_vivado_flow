@@ -83,14 +83,17 @@ flowchart
     The schematic for the output data path will be displayed.
 
 
-    ![Fig3](images/lab3/Fig3.png)
+    <div align= "center">
+    <img  src="images/lab3/Fig3.png">
+    </div>
 
     <p align = "center">
     <i>The output data path(Boolean)</i>
     </p>
 
-    ![image-20220406155214280](images/lab3/Fig3_z2.png)
-
+    <div align= "center">
+    <img  src="images/lab3/Fig3_z2.png">
+    </div>
     <p align = "center">
     <i>The output data path(PYNQ-Z2)</i>
     </p>
@@ -100,20 +103,26 @@ flowchart
 
 9. Similarly, double-click on the left end of the BUFG to see the path between IBUF and BUFG.
 
-![Fig4](images/lab3/Fig4.png)
 
+<div align = "center">
+<img src ="images/lab3/Fig4.png">
+</div>
 
 <p align = "center">
 <i>Source to clock port of the FDRE</i>
 </p>
 
-![Fig1](images/lab3/Fig5.png)
+<div align = "center">
+<img src ="images/lab3/Fig5.png">
+</div>
 
 <p align = "center">
 <i>The schematic view of the source clock path(Boolean)</i>
 </p>
 
-![image-20220406155310848](images/lab3/Fig5_z2.png)
+<div align = "center">
+<img src ="images/lab3/Fig5_z2.png">
+</div>
 
 <p align = "center">
 <i>The schematic view of the source clock path(PYNQ-Z2)</i>
@@ -121,7 +130,10 @@ flowchart
 
   This corresponds to the Source Clock Path in the timing report.
 
-![Fig1](images/lab3/Fig6.png)
+
+<div align = "center">
+<img src ="images/lab3/Fig6.png">
+</div>
 
 <p align = "center">
 <i>The source clock path for the Boolean</i>
@@ -130,8 +142,10 @@ flowchart
 
 Since the virtual clock is slower (12 ns) than the clk_pin period (10 ns for Boolean or 8 ns for PYNQ-Z2), the data path delay includes the clock period of the clk_pin clock source.
 
-![Fig1](images/lab3/Fig7.png)
 
+<div align = "center">
+<img src ="images/lab3/Fig7.png">
+</div>
 
 <p align = "center">
 <i>Worst failing path for the Boolean</i>
@@ -144,23 +158,29 @@ Since the virtual clock is slower (12 ns) than the clk_pin period (10 ns for Boo
    The *Timing Constraints* GUI will appear, showing the design has two created clocks, four inputs, and one output constraints. It also shows the constraints in the text form in the *All Constraints*
    section.
 
-   ![Fig1](images/lab3/Fig8.png)
+   <div align = "center">
+   <img src ="images/lab3/Fig8.png">
+   </div>
 
-    <p align = "center">
-    <i>Timing Constraints showing 12 ns Virtual Clock period defined (Boolean)</i>
-    </p>
+   <p align = "center">
+   <i>Timing Constraints showing 12 ns Virtual Clock period defined (Boolean)</i>
+   </p>
 
 2. Click in the Period cell of the virtual_clock and change the period from 12 to 10(Boolean) or to 8(PYNQ-z2)
 
 3. Click **Apply**.
     Note that since the timing constraint has changed, a warning message in the console pane is displayed to rerun the report.
 
-  ![Fig1](images/lab3/figa.png)
+   <div align = "center">
+   <img src ="images/lab3/figa.png">
+   </div>
 
 4. Click on Rerun.
     Notice that setup timing violations are gone. However, there are still 2 failing paths for the Hold.
 
-    ![Fig1](images/lab3/Fig9.png)
+    <div align = "center">
+    <img src ="images/lab3/Fig9.png">
+    </div>
 
     <p align = "center">
     <i> Setup timing met</i>
@@ -199,7 +219,9 @@ When the implementation is completed, a dialog box will appear with three option
 
 3. Select Slice LUTs to view how much and which module consumes the resource.
 
-    ![Fig1](images/lab3/Fig10.png)
+    <div align = "center">
+    <img src ="images/lab3/Fig10.png">
+    </div>
 
     <p align = "center">
     <i>Resource utilization for the Boolean</i>
@@ -212,7 +234,9 @@ When the implementation is completed, a dialog box will appear with three option
 The Report Timing Summary dialog box opens.
 2. Leave all the settings unchanged and click **OK** to generate the report.
 
-   ![Fig1](images/lab3/Fig11.png)
+   <div align = "center">
+   <img src ="images/lab3/Fig11.png">
+   </div>
 
    <p align = "center">
    <i>The timing summary report showing timing violations</i>
@@ -222,7 +246,9 @@ The Report Timing Summary dialog box opens.
 
 4. Double-click on the first failing path to see why it is failing.
 
-   ![Fig1](images/lab3/Fig11.png)
+   <div align = "center">
+   <img src ="images/lab3/Fig12.png">
+   </div>
 
    <p align = "center">
    <i>The timing summary report showing timing violations</i>
@@ -254,7 +280,9 @@ The Report Timing Summary dialog box opens.
 13. Select *clk_pin* entry and observe the selected nets in the Device view.
     The clock nets are spread across multiple clock regions.
 
-![Fig1](images/lab3/Fig13.png)
+<div align = "center">
+<img src ="images/lab3/Fig13.png">
+</div>
 
 <p align = "center">
 <i>Clock nets for the Boolean</i>
@@ -267,11 +295,13 @@ The Report Timing Summary dialog box opens.
 
 1. In the *Flow Navigator*, under Program and Debug, click **Generate Bitstream.**
 
-    ![Fig1](images/lab3/Fig14.png)
+   <div align = "center">
+   <img src ="images/lab3/Fig14.png">
+   </div>
 
-    <p align = "center">
-    <i>Generating the bitstream</i>
-    </p>
+   <p align = "center">
+   <i>Generating the bitstream</i>
+   </p>
 
 
 2. Click **Save** to save the constraints since the timing constraints had been changed, click **OK**, and then **Yes** to reset the runs and re-run all the processes.
@@ -291,11 +321,13 @@ The write_bitstream command will be executed (you can verify it by looking in th
     The Hardware Manager window will open indicating “unconnected” status.
 3. Click on the **Open target** link, then **Auto Connect** from the dropdown menu.
 
-  ![Fig1](images/lab3/Fig15.png)
+   <div align = "center">
+   <img src ="images/lab3/Fig15.png">
+   </div>
 
-    <p align = "center">
-    <i>Opening new hardware target</i>
-    </p>
+   <p align = "center">
+   <i>Opening new hardware target</i>
+   </p>
 4. The *Hardware Manager Session* status changes from **Unconnected** to the server name and the device is highlighted. Also notice that the *Status* indicates that it is not programmed.
 5. Select the device in the Hardware Device Properties, and verify that the **uart_led.bit** is selected as the programming file in the General tab.
 
@@ -308,7 +340,9 @@ The write_bitstream command will be executed (you can verify it by looking in th
 3. Select the *Open Hardware Manager* option and click **OK**.
    The Hardware Manager window will open indicating “unconnected” status.
 
-   ![Fig1](images/lab3/Fig15.png)
+   <div align = "center">
+   <img src ="images/lab3/Fig15.png">
+   </div>
 
    <p align = "center">
    <i>Opening new hardware target</i>

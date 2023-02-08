@@ -383,7 +383,10 @@ You can move the mouse on the boxes which do not show the percentage to see the 
 1. Click on the **Settings** under the *Project Manager*, and select **Synthesis**.
 2. Click on the **flatten_hierarchy** drop-down button and select **full** to flatten the design.
 
-   ![image-20220222143623444](images/lab2/Fig16.png)
+
+   <div align = "center">
+   <img src ="images/lab2/Fig16.png">
+   </div>
    <div align = "center">
    <img src ="images/lab2/Fig15.png">
    </div>
@@ -396,7 +399,10 @@ You can move the mouse on the boxes which do not show the percentage to see the 
 
 4. A Create New Run dialog box will appear asking you whether you want to create a new run since  the settings have been changed.
 
-   ![image-20220222143623444](images/lab2/Fig17.png)
+ 
+   <div align = "center">
+   <img src ="images/lab2/Fig17.png">
+   </div>
 
    <p align = "center">
    <i>Create New Run dialog box</i>
