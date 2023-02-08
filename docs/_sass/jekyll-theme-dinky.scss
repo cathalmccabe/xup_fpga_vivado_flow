@@ -343,10 +343,9 @@ img {
 
 p img,
 .emoji {
-    display: inline;
+    display: block;
     margin: 10px auto 10px auto;
     padding: 0;
-    vertical-align: middle;
     text-align: center;
     border: none;
     max-width: 100%;
