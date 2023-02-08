@@ -116,7 +116,9 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 1. In the Sources pane, expand the uart_led entry and notice hierarchy of the lower-level modules.
 
-   ![image-20220222143623444](images/lab2/Fig2.png)
+   <div align = "center">
+   <img src =".images/lab2/Fig2.png">
+   </div>
 
    <p align = "center">
    <i>Opening the source file (Boolean as example)</i>
@@ -134,8 +136,9 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 4. In the *Sources* pane, expand the *Constraints* folder and double-click the *uart_led_timing_{BOARD}.xdc*  entry to open the file in text mode.
 
-   ![image-20220222143623444](images/lab2/Fig3.png)
-
+   <div align = "center">
+   <img src =".images/lab2/Fig3.png">
+   </div>
    <p align = "center">
    <i>Timing constraints</i>
    </p>
@@ -150,8 +153,9 @@ The absolute path for the source code should only contain ascii characters. Deep
    pane and click on **Schematic**.
    The model (design) will be elaborated and a logical view of the design is displayed.
 
-   ![image-20220222143623444](images/lab2/Fig4.png)
-
+   <div align = "center">
+   <img src =".images/lab2/Fig4.png">
+   </div>
    <p align = "center">
    <i>A logic view of the design</i>
    </p>
@@ -166,8 +170,10 @@ The absolute path for the source code should only contain ascii characters. Deep
 3. Double-click on the uart_rx_i0 instance in the schematic diagram to see the underlying
    components.
 
-   ![image-20220222143623444](images/lab2/Fig5.png)
-
+   
+   <div align = "center">
+   <img src =".images/lab2/Fig5.png">
+   </div>
    <p align = "center">
    <i>Lower level components of the uart_rx_i0 module</i>
    </p>
@@ -176,8 +182,10 @@ The absolute path for the source code should only contain ascii characters. Deep
    *Flow Navigator* pane.
 5. Click **OK** to generate the report named **ssn_1**.
 
-   ![image-20220222143623444](images/lab2/Fig6.png)
-
+   
+   <div align = "center">
+   <img src =".images/lab2/Fig6.png">
+   </div>
    <p align = "center">
    <i>Noise report</i>
    </p>
@@ -196,7 +204,10 @@ The absolute path for the source code should only contain ascii characters. Deep
    Notice that the sources are modified and the tools detect it, showing a warning status bar to reload
    the design.
 
-   ![image-20220222143623444](images/lab2/Fig7.png)
+   
+   <div align = "center">
+   <img src =".images/lab2/Fig7.png">
+   </div>
 
 9. Click on the **Reload** link. The constraints will be processed.
 10. Click on **Report** **Noise** and click **OK** to generate the report named **ssn_1**. Observe that this time
@@ -234,8 +245,9 @@ The absolute path for the source code should only contain ascii characters. Deep
 5. Click on **Schematic** under the *Open* *Synthesized* *Design* tasks of *Synthesis* tasks of the *Flow*
    *Navigator* pane to view the synthesized design in a schematic view.
 
-   ![image-20220222143623444](images/lab2/Fig8.png)
-
+   <div align = "center">
+   <img src =".images/lab2/Fig8.png">
+   </div>
    <p align = "center">
    <i>Synthesized design’s schematic view</i>
    </p>
@@ -291,7 +303,9 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 1. Click **Report Utilization** under the *Synthesized Design*, and click **OK** to generate the utilization report.
 
-   ![image-20220222143623444](images/lab2/Fig12.png)
+   <div align = "center">
+   <img src =".images/lab2/Fig12.png">
+   </div>
 
    <p align = "center">
    <i>Utilization report for the Boolean</i>
@@ -309,8 +323,9 @@ The absolute path for the source code should only contain ascii characters. Deep
 
 2. Select Slice LUTs entry in the left pane and see the utilization by lower-level instances. You can    expand the instances in the right pane to see the complete hierarchy utilization.
 
-   ![image-20220222143623444](images/lab2/Fig13.png)
-
+   <div align = "center">
+   <img src =".images/lab2/Fig13.png">
+   </div>
    <p align = "center">
    <i>Utilization of lower-level modules for the Boolean</i>
    </p>
@@ -338,8 +353,10 @@ You can move the mouse on the boxes which do not show the percentage to see the 
 1. Select **File > Checkpoint > Write** to save the processed design so it can be opened later for    further analysis.
 2. A dialog box will appear showing the default name of the file in the current project directory.
 
-   ![image-20220222143623444](images/lab2/Fig15.png)
-
+   
+   <div align = "center">
+   <img src =".images/lab2/Fig15.png">
+   </div>
    <p align = "center">
    <i>Wiring Checkpoint</i>
    </p>
@@ -352,7 +369,9 @@ You can move the mouse on the boxes which do not show the percentage to see the 
 2. Click on the **flatten_hierarchy** drop-down button and select **full** to flatten the design.
 
    ![image-20220222143623444](images/lab2/Fig16.png)
-
+   <div align = "center">
+   <img src =".images/lab2/Fig15.png">
+   </div>
    <p align = "center">
    <i>Selecting flatten hierarchy option</i>
    </p>
